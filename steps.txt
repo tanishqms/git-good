@@ -1,2 +1,6 @@
 git clone https://github.com/tanishqms/git-good.git
 git status
+git add steps.txt
+git commit -m "Add steps.txt"
+git push origin main
+git checkout -b feature/hello-world
