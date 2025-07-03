@@ -42,3 +42,7 @@ git rebase -i deacd05400a6b3feb39153a0b7bdacfc784de030
 git commit --amend
 <renamed overall commit message, :wq out of vim>
 git push --force
+
+git push -u origin conflicts/b1
+git push -u origin conflicts/b2
+<push these branches for reference>
