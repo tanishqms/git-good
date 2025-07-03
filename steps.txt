@@ -7,3 +7,10 @@ git push origin main
 git checkout -b feature/hello-world
 <do required feature work>
 git push -u origin feature/hello-world
+
+<create a PR>
+<squash and merge the PR>
+git checkout main
+git fetch
+git merge
+<git pull = git fetch + git merge>
