@@ -34,3 +34,11 @@ git checkout -b conflicts/b2
 <perform conflicting changes and commit in both branches>
 <merge first branch into main>
 <resolve merge conflict and merge second branch as well>
+
+<clean up branch history before pushing local main to origin>
+git rebase -i deacd05400a6b3feb39153a0b7bdacfc784de030
+<tidy up history (commits) after this particular commit by squashing them>
+<pick and squash, overall commit message>
+git commit --amend
+<renamed overall commit message, :wq out of vim>
+git push --force
