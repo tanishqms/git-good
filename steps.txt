@@ -7,3 +7,30 @@ git push origin main
 git checkout -b feature/hello-world
 <do required feature work>
 git push -u origin feature/hello-world
+
+<create a PR>
+<squash and merge the PR>
+git checkout main
+git fetch
+git merge
+<git pull = git fetch + git merge>
+
+git checkout -b feature/conflicts
+<make conflicting changes and commit>
+
+git checkout main
+git merge feature/conflicts
+<notice that it's not a conflicting change>
+<also notice that it's a regular merge (not a squash merge) and adds all commits to history of main>
+git log
+<find id of last commit before problematic merge>
+git reset --mixed 5331df4654d4e7614df0292a353e923052c2a4b9
+
+git branch
+git branch -D feature/conflicts
+git checkout -b conflicts/b1
+git checkout main
+git checkout -b conflicts/b2
+<perform conflicting changes and commit in both branches>
+<merge first branch into main>
+<resolve merge conflict and merge second branch as well>
